@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Anek+Telugu&family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 body {
@@ -49,13 +51,17 @@ nav li {
   background-size: cover;
 }
 
+.songList h1 {
+  margin: 25px 0px;
+}
+
 .songs {
   display: flex;
   height: 50px;
   width: 400px;
   background-color: #67738b;
   color: black;
-  margin: 10px 0;
+  margin: 22px 0;
   justify-content: space-between;
   align-items: center;
   border-radius: 15px;
@@ -63,6 +69,7 @@ nav li {
 .songs .songPlay {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .songs img {
   width: 43px;
@@ -70,17 +77,19 @@ nav li {
 }
 .songs i {
   margin-right: 12px;
+  margin-left: 10px;
 }
 .songs .timeStamp {
-  margin-right: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .footer {
   position: -webkit-sticky;
   position: sticky;
   bottom: 0;
-  height: 100px;
-  background-color: rgba(116, 27, 27, 0.627);
+  height: 120px;
+  background-color: rgba(0, 0, 0, 0.627);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -94,4 +103,23 @@ nav li {
 }
 .footer .icon i {
   cursor: pointer;
+  color: rgb(255, 255, 255);
+  margin-top: 10px;
+}
+
+.songGif {
+  display: flex;
+  align-items: center;
+  color: white;
+  position: absolute;
+  left: 9.8vw;
+  margin-top: 10px;
+}
+.songGif img {
+  border-radius: 30%;
+  margin-right: 15px;
+  width: 60px;
+  height: 40px;
+  opacity: 0;
+  transition: opacity 1s ease-in;
 }/*# sourceMappingURL=style.css.map */

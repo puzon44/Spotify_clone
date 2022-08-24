@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Telugu&family=Open+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("Bg.jpg");
+}
+
+nav {
+  font-family: "Open Sans", sans-serif;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  height: 76px;
+  background-color: rgb(16, 16, 16);
+  color: white;
+}
+nav ul img {
+  width: 64px;
+}
+nav li {
+  padding: 0 20px;
+  font-size: 1.25rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.7rem;
+}
+
+.container {
+  min-height: 77vh;
+  color: white;
+  display: flex;
+  margin: 20px auto;
+  width: 60%;
+  border-radius: 20px;
+  padding: 20px 30px;
+  overflow: hidden;
+  background: url("background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.songs {
+  display: flex;
+  height: 50px;
+  width: 400px;
+  background-color: #67738b;
+  color: black;
+  margin: 10px 0;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+}
+.songs .songPlay {
+  display: flex;
+  align-items: center;
+}
+.songs img {
+  width: 43px;
+  margin: 0 12px;
+}
+.songs i {
+  margin-right: 12px;
+}
+.songs .timeStamp {
+  margin-right: 10px;
+}
+
+.footer {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  height: 100px;
+  background-color: rgba(116, 27, 27, 0.627);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer #progressBar {
+  width: 80vw;
+}
+.footer .icon {
+  margin: 6px;
+}
+.footer .icon i {
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

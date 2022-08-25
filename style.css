@@ -8,7 +8,7 @@
 }
 
 body {
-  background: url("Bg.jpg");
+  background: url("image/Bg.jpg");
 }
 
 nav {
@@ -46,7 +46,8 @@ nav li {
   border-radius: 20px;
   padding: 20px 30px;
   overflow: hidden;
-  background: url("background.jpg");
+  background: black;
+  background: url("image/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -74,6 +75,7 @@ nav li {
 .songs img {
   width: 43px;
   margin: 0 12px;
+  border-radius: 30%;
 }
 .songs i {
   margin-right: 12px;
@@ -100,11 +102,16 @@ nav li {
 }
 .footer .icon {
   margin: 6px;
+  display: flex;
 }
 .footer .icon i {
   cursor: pointer;
   color: rgb(255, 255, 255);
   margin-top: 10px;
+}
+.footer .icon #playPause {
+  flex-direction: column;
+  margin: 0 10px;
 }
 
 .songGif {
@@ -121,5 +128,5 @@ nav li {
   width: 60px;
   height: 40px;
   opacity: 0;
-  transition: opacity 1s ease-in;
+  transition: opacity 0.3s ease-in;
 }/*# sourceMappingURL=style.css.map */

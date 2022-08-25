@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Anek+Telugu&family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 
+@mixin flexProp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +15,7 @@
 }
 
 body {
-  background: url("Bg.jpg");
+  background: url("image/Bg.jpg");
 }
 
 nav {
@@ -52,16 +58,15 @@ nav {
   border-radius: 20px;
   padding: 20px 30px;
   overflow: hidden;
-  background: url("background.jpg");
+  background: black;
+  background: url("image/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.songList{
-  h1{
+.songList {
+  h1 {
     margin: 25px 0px;
-
-    
   }
 }
 
@@ -85,11 +90,12 @@ nav {
   img {
     width: 43px;
     margin: 0 12px;
+    border-radius: 30%;
   }
 
   i {
     margin-right: 12px;
-    margin-left: 10px ;
+    margin-left: 10px;
   }
   .timeStamp {
     display: flex;
@@ -104,9 +110,7 @@ nav {
   bottom: 0;
   height: 120px;
   background-color: rgba(0, 0, 0, 0.627);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexProp();
   flex-direction: column;
 
   #progressBar {
@@ -115,16 +119,22 @@ nav {
 
   .icon {
     margin: 6px;
+    display: flex;
 
     i {
       cursor: pointer;
       color: rgb(255, 255, 255);
       margin-top: 10px;
     }
+
+    #playPause {
+      flex-direction: column;
+      margin: 0 10px;
+    }
   }
 }
 
-.songGif{
+.songGif {
   display: flex;
   align-items: center;
   color: white;
@@ -132,12 +142,12 @@ nav {
   left: 9.8vw;
   margin-top: 10px;
 
-  img{
+  img {
     border-radius: 30%;
     margin-right: 15px;
     width: 60px;
     height: 40px;
     opacity: 0;
-    transition: opacity 1s ease-in;
+    transition: opacity 0.3s ease-in;
   }
 }
